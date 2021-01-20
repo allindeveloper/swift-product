@@ -26,9 +26,10 @@ const Home = () =>{
            
            {/* Api Service */}
 
-           <ApiService/>
-          
           <Services/>
+          <SpaceTop length={30}/>
+           <ApiService/>
+           <SpaceTop length={190}/>
            <Footer/>
            </div>
         </>

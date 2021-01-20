@@ -4,7 +4,7 @@ import Player from "../Player/Player";
 const ApiService = () => {
   return (
     <React.Fragment>
-      <section className="section-sm bg-lightblue" id="apiservice">
+      <section className="section-lg bg-lightblue" id="apiservice">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-5 order-2 order-lg-1">

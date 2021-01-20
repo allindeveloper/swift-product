@@ -38,7 +38,7 @@ class Header extends Component {
                             <div className={this.state.isOpen ? "collapse navbar-collapse show" : "flex-end collapse navbar-collapse"} style={{ display : this.state.isOpen ? "inline-grid" : "" }} id="navbarCollapse">
 
                                 <SmartScroll
-                                    scrollTargetIds={["home","apiservice", "contact"]}
+                                    scrollTargetIds={["home","services","apiservice", "contact"]}
                                     activeNavClass="active"
                                     scrollDuration="800"
                                     headerBackground="true"
@@ -46,7 +46,8 @@ class Header extends Component {
                                         
                                     <ul className={this.state.isOpen ? "navbar-nav navbar-left" : "navbar-nav ml-auto navbar-left"} id="mySidenav">
                                         <li className="nav-item active"><a href="#home" className="nav-link">Home</a></li>
-                                        <li className="nav-item"><a href="#apiservice" className="nav-link">Api Service</a></li>
+                                        <li className="nav-item"><a href="#services" className="nav-link">Services</a></li>
+                                        <li className="nav-item"><a href="#apiservice" className="nav-link">API</a></li>
                                         <li className="nav-item"><a href="#contact" className="nav-link">Contact Us</a></li>
                                         </ul>
 
