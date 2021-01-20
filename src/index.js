@@ -1,12 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Router } from 'react-router-dom';
+import { Layout } from './components/hoc/Layout';
+import history from './history';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Router history={history} >
+    <Layout
+    />
+    </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );
