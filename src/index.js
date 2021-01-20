@@ -10,16 +10,13 @@ import './css/pe-icon-7-stroke.css';
 import './css/style.css';
 import './css/waves.css';
 import history from './history';
-import './index.css';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-  <React.StrictMode>
     <Router history={history} >
     <Layout
     />
-    </Router>
-  </React.StrictMode>,
+    </Router>,
   document.getElementById('root')
 );
 

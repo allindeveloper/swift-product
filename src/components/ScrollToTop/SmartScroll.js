@@ -64,7 +64,6 @@ class ScrollspyNav extends Component {
             navLink.addEventListener("click", (event) => {
                 event.preventDefault();
                 let sectionID = this.getNavToSectionID(navLink.getAttribute("href"));
-
                 if (sectionID) {
                     let scrollTargetPosition = document.getElementById(sectionID).offsetTop - (this.headerBackground ? document.querySelector("div[data-nav='list']").scrollHeight : 0);
                     this.scrollTo(window.pageYOffset, scrollTargetPosition, this.scrollDuration);
@@ -78,7 +77,6 @@ class ScrollspyNav extends Component {
             let scrollSectionOffsetTop;
             this.scrollTargetIds.map((sectionID, index) => {
                 scrollSectionOffsetTop = document.getElementById(sectionID).offsetTop - (this.headerBackground ? document.querySelector("div[data-nav='list']").scrollHeight : 0);
-
                 if (window.pageYOffset >= scrollSectionOffsetTop && window.pageYOffset < scrollSectionOffsetTop + document.getElementById(sectionID).scrollHeight) {
                     this.getNavLinkElement(sectionID).classList.add(this.activeNavClass);
                     this.getNavLinkElement(sectionID).parentNode.classList.add(this.activeNavClass);

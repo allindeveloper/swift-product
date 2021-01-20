@@ -27,10 +27,10 @@ class Header extends Component {
         return (
             <React.Fragment>
                 <div id="is-sticky">
-                    <nav className="navbar navbar-expand-lg fixed-top navbar-custom sticky" id="nav-bar">
+                    <nav className="navbar navbar-expand-lg fixed-top navbar-custom sticky navbar-custom navbar-white" id="nav-bar">
                         <div className="container">
                         <a className="navbar-brand" href="/">
-                                VGN Core   </a>
+                                Swift Payment   </a>
 
                             <button className="navbar-toggler" onClick={this.toggleMenu} type="button">
                                 <i className="mdi mdi-menu"></i>
@@ -38,15 +38,15 @@ class Header extends Component {
                             <div className={this.state.isOpen ? "collapse navbar-collapse show" : "flex-end collapse navbar-collapse"} style={{ display : this.state.isOpen ? "inline-grid" : "" }} id="navbarCollapse">
 
                                 <SmartScroll
-                                    scrollTargetIds={["documentation", "contact"]}
+                                    scrollTargetIds={["home","apiservice", "contact"]}
                                     activeNavClass="active"
                                     scrollDuration="800"
                                     headerBackground="true"
                                     className={this.state.isOpen ? "navbar-nav ml-0 float-left" : "navbar-nav navbar-center"} >
                                         
                                     <ul className={this.state.isOpen ? "navbar-nav navbar-left" : "navbar-nav ml-auto navbar-left"} id="mySidenav">
-                                        <li className="nav-item active"><a href="#documentation" className="nav-link">API Documentation</a></li>
-                                        <li className="nav-item"><a href="#faq" className="nav-link">FAQ</a></li>
+                                        <li className="nav-item active"><a href="#home" className="nav-link">Home</a></li>
+                                        <li className="nav-item"><a href="#apiservice" className="nav-link">Api Service</a></li>
                                         <li className="nav-item"><a href="#contact" className="nav-link">Contact Us</a></li>
                                         </ul>
 

@@ -1,9 +1,10 @@
 import React from "react";
-// import { Link } from 'react-router-dom';
+import { Button } from "react-bootstrap";
 import Fade from "react-reveal/Fade";
 import dash from "../../images/dash.svg";
 import grAnaly from "../../images/growth-analytics.svg";
 import SpaceTop from "../Space/SpaceTop";
+import NewUserForm from "./NewUserForm";
 
 const About = () => {
  
@@ -19,19 +20,26 @@ const About = () => {
               <div className="features-box mt-5 mt-lg-0">
                 <Fade bottom>
                   <h1 className="text-header">
-                    Enabling Seamless Integrations between banks
+                    Enabling Fast Payment Integrations across the globe
                   </h1>
                 </Fade>
                 <p className="text-muted web-desc">
                   Swift Enables Fast and Reliable Global Payment  
                   services via our super simple APIs.
                 </p>
-                <a
-                  href="#"
+                <NewUserForm
+                id="form"
+                submitButton ={
+                  <Button
+                  type="submit"
+                  style={{margin:"auto"}}
                   className="btn btn-custom margin-t-30 waves-effect waves-light"
                 >
                   Join Waiting List
-                </a>
+                </Button>
+                }
+                />
+                
               </div>
             </div>
             <div className="col-lg-7 order-1 order-lg-2">

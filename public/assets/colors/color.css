@@ -1,0 +1,96 @@
+/*  Theme Name: Hiric | Responsive Bootstrap Landing Template Cyan
+    Author: Themesbrand
+    Version: 1.0.0
+    File Description: Main CSS file of the template
+*/
+
+
+.text-custom,.read-btn,
+.navbar-custom.navbar-white .navbar-nav li.active a,
+.navbar-custom.navbar-white .navbar-nav li a:hover,
+.navbar-custom.navbar-white .navbar-nav li a:focus,
+.navbar-custom.navbar-white .navbar-nav li a:active,
+.play-btn,.blog-title:hover,.social-icon:hover i{
+    color: #1bbc9d !important;
+}
+
+
+.section-title-border, .bg-custom, .btn-custom,.features-item-list li:before,.process-left-icon-1 i,
+.process-left-icon-2 i{
+    background-color: #000000;
+}
+
+
+
+.btn-custom,.play-btn{
+    border-color:#000000!important;
+}
+
+.btn-custom:hover,
+.btn-custom:focus,
+.btn-custom:active,
+.btn-custom.active,
+.btn-custom.focus,
+.btn-custom:active,
+.btn-custom:focus,
+.btn-custom:hover,
+.open > .dropdown-toggle.btn-custom{
+	background-color: #0B2253;
+}
+
+
+.btn-custom:hover,
+.btn-custom:focus,
+.btn-custom:active,
+.btn-custom.active,
+.btn-custom.focus,
+.btn-custom:active,
+.btn-custom:focus,
+.btn-custom:hover,
+.open > .dropdown-toggle.btn-custom{
+	border-color: #159078 !important;
+}
+
+.text-header{
+    color: #041644 !important;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.text-inner{
+    color: #041644 !important;
+    font-size: 28px;
+    font-weight: 600;
+}
+.text-center-black{
+    color: #041644 !important;
+    font-size: 40px;
+    font-weight: 600;
+}
+.text-simple{
+    color: #051A52 !important;
+    font-size: 18px;
+    font-weight: normal;
+}
+.text-simple-bold{
+    color: #051A52 !important;
+    font-size: 18px;
+    font-weight: bold;
+}
+.navbar-brand{
+    color: #041644 !important;
+    font-weight: 800 !important;
+    font-size: 24px;
+}
+.text-small{
+    color: #051A52 !important;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 32px;
+}
+.text-alone{
+    color: #051A52 !important;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 16px;
+}
