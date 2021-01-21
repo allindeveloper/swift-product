@@ -17,9 +17,7 @@ const Services = () => {
               </Fade>
               <div className="section-title-border margin-t-20"></div>
               <p className="section-subtitle text-muted text-center padding-t-30 font-secondary">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget
-                tortor, pellentesque donec ut accumsan nibh turpis massa
-                facilisis pellentesque amet.
+              Swift Networks offers state-of-the-art broadband services for cost-effective and reliable deployment of a multi-service network, offering converged voice telephony, video conferencing, video surveillance, high-Speed data transmission and Internet access services over our secure, high-speed and reliable telecommunications pipe.
               </p>
             </Col>
           </Row>
@@ -28,9 +26,8 @@ const Services = () => {
               <Fade bottom>
                 <ServicesCard 
                 viewMoreLink=""
-                caption="Reliable Reporting"
-                caption="Smart Bundles"
-                content="Lorem ipsum dolor sit amert plerusa consectetur vred adipiscing tortor donec deauteir accumsan nibh turpis treu massa, consectetur adipiscing tortor benelit. " />
+                caption="Payment Controls"
+                content="SWIFT Payment Controls makes it easy for you to mitigate fraudulent attacks by detecting and preventing high-risk payments." />
               </Fade>
             </Col>
 
@@ -39,7 +36,7 @@ const Services = () => {
                 <ServicesCard 
                 viewMoreLink=""
                 caption="Quick Recharge"
-                content="Lorem ipsum dolor sit amert plerusa consectetur vred adipiscing tortor donec deauteir accumsan nibh turpis treu massa, consectetur adipiscing tortor benelit. " />
+                content="Using our Super Fast Recharge APIs, you can buy Large Bundles, Transfer to Third Party and perform many other operations at lightning speed" />
               </Fade>
             </Col>
 
@@ -49,7 +46,7 @@ const Services = () => {
                 <ServicesCard 
                 viewMoreLink=""
                 caption="Quick teller"
-                content="Lorem ipsum dolor sit amert plerusa consectetur vred adipiscing tortor donec deauteir accumsan nibh turpis treu massa, consectetur adipiscing tortor benelit. " />
+                content="With Seamless integration into Quick Teller, now all your worries about online payments have been taken care of. we'll do the work for you." />
               </Fade>
             </Col>
           </div>

@@ -1,27 +1,25 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 // import { a } from 'react-router-dom';
 import SmartScroll from "../ScrollToTop/SmartScroll";
 
-class Header extends Component {
-  constructor(props) {
-    super(props);
-    this.state = { Tab: "", isOpen: false };
 
-    this.toggleMenu = this.toggleMenu.bind(this);
-  }
+const Header = ({}) =>{
+  
 
-  toggleMenu = () => {
-    this.setState({ isOpen: !this.state.isOpen });
+  const [Tab, setTab] = useState("")
+  const [isOpen, setisOpen] = useState(false)
+
+  const toggleMenu = () => {
+    setisOpen(!isOpen)
   };
 
   /**
    * Sets active tab
    */
-  setActiveTab = (tab, e) => {
-    this.setState({ Tab: tab });
+  const setActiveTab = (tab, e) => {
+    setTab(tab)
   };
 
-  render() {
     return (
       <React.Fragment>
         <div id="is-sticky">
@@ -30,24 +28,24 @@ class Header extends Component {
             id="nav-bar"
           >
             <div className="container">
-              <a className="navbar-brand" href="/">
+              <a className="navbar-brand" id="header-img" href="/">
                 Swift Payment{" "}
               </a>
 
               <button
                 className="navbar-toggler"
-                onClick={this.toggleMenu}
+                onClick={toggleMenu}
                 type="button"
               >
                 <i className="mdi mdi-menu"></i>
               </button>
               <div
                 className={
-                  this.state.isOpen
+                  isOpen
                     ? "collapse navbar-collapse show"
                     : "flex-end collapse navbar-collapse"
                 }
-                style={{ display: this.state.isOpen ? "inline-grid" : "" }}
+                style={{ display: isOpen ? "inline-grid" : "" }}
                 id="navbarCollapse"
               >
                 <SmartScroll
@@ -61,14 +59,14 @@ class Header extends Component {
                   scrollDuration="800"
                   headerBackground="true"
                   className={
-                    this.state.isOpen
+                    isOpen
                       ? "navbar-nav ml-0 float-left"
                       : "navbar-nav navbar-center"
                   }
                 >
                   <ul
                     className={
-                      this.state.isOpen
+                      isOpen
                         ? "navbar-nav navbar-left"
                         : "navbar-nav ml-auto navbar-left"
                     }
@@ -97,7 +95,7 @@ class Header extends Component {
                   </ul>
                 </SmartScroll>
                 <div
-                  className={this.state.isOpen ? "nav-button" : "nav-button"}
+                  className={isOpen ? "nav-button" : "nav-button"}
                 >
                   <ul className="nav navbar-nav navbar-left">
                     <li>
@@ -116,7 +114,7 @@ class Header extends Component {
         </div>
       </React.Fragment>
     );
-  }
+  
 }
 
 export default Header;

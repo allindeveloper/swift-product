@@ -1,7 +1,7 @@
 import React from "react";
 import { Card } from "react-bootstrap";
 import empty from "../../images/empty.svg";
-
+import "./servicescard.scss";
 export default function ServicesCard({caption, content, viewMoreLink }) {
   const [expanded, setExpanded] = React.useState(false);
 
@@ -10,7 +10,7 @@ export default function ServicesCard({caption, content, viewMoreLink }) {
   };
 
   return (
-    <Card style={{ width: "22rem" }}>
+    <Card className="servicescard">
       <Card.Body>
         <Card.Title>
           <img src={empty} alt="empty" />

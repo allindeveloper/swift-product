@@ -1,0 +1,42 @@
+@media (min-width: 320px) {
+  /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+}
+@media (min-width: 480px) {
+  /* smartphones, Android phones, landscape iPhone */
+  .servicescard{
+    width: 18rem;
+}
+}
+@media (min-width: 600px) {
+  /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+  .servicescard{
+    width: 18rem;
+}
+}
+@media (min-width: 801px) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+  .servicescard{
+    width: 23rem;
+}
+}
+@media (min-width: 1025px) {
+  /* big landscape tablets, laptops, and desktops */
+  .servicescard{
+    width: 23rem;
+}
+}
+@media (min-width: 1281px) {
+  /* hi-res laptops and desktops */
+  .servicescard{
+      width: 23rem;
+  }
+}
+
+.servicescard{
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+    border: none;
+}
+.servicescard:hover{
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 8px 16px -4px, rgba(9, 30, 66, 0.31) 0px 0px 1px;
+    transition: box-shadow 0.2s ease 0s;
+}

@@ -270,7 +270,7 @@ export const NotFound = (props) => {
                                     404
         </text>
                                 <text transform="translate(465.5 213.994)" class="st8 st10" font-size="24.025">
-                                    Service Manager Page not found.
+                                    Swift Payment Page not found.
         </text>
                             </g>
                             <g id="ladders">
