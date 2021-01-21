@@ -9,6 +9,7 @@ const Success = (props) => {
   useEffect(() => {
     if(props.location.search){
         const value = decodeURIComponent(props.location.search)
+        if (value.includes("email")){
         const splitted = value.split("=")
         if(splitted){
             const email = splitted[1]
@@ -16,6 +17,9 @@ const Success = (props) => {
         }else{
             props.history.push("/")
         }
+    }else{
+        props.history.push("/")
+    }
     }else{
         props.history.push("/")
     }
@@ -31,7 +35,7 @@ const Success = (props) => {
           <h1>Success</h1>
           <p>
               Hello {email}<br/>
-            We received your purchase request;
+            We received your request;
             <br /> we'll be in touch shortly!
           </p>
         </div>

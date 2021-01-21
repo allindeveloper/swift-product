@@ -26,7 +26,7 @@ const NewUserForm = ({submitButton,id,history}) => {
   return (
     <Form noValidate action="/success" validated={validated} id={id} onSubmit={handleSubmit}>
     <Form.Row>
-      <Form.Group as={Col} md="12" controlId="validationCustom01">
+      <Form.Group as={Col} md="12" controlId="email">
         <Form.Label>Email address</Form.Label>
         <Form.Control
           required

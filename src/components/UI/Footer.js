@@ -47,8 +47,8 @@ Georgia</a></li>
                             <div className="col-lg-3 margin-t-20">
                                 <h4 className="text-simple-bold">Contact Us</h4>
                                 <div className="margin-t-20">
-                                    <p className="text-alone">+234 [0] 700 000 1111</p>
-                                    <p className="text-alone text-underline">contactus@swiftpayment.com</p>
+                                    <p className="text-alone"><a href="tel:+496170961709">+234 [0] 700 000 1111</a></p>
+                                    <p className="text-alone text-underline"><a href="mailto:contactus@swiftpayment.com?subject=Enquiry About Swift Payment">contactus@swiftpayment.com</a></p>
                                     <p className="text-alone">Follow us</p>
                                     <div className="inline-flex">
                                         <div style={{paddingRight:"1rem"}}><img src={twitter} /></div>
