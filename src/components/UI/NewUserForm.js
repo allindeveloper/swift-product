@@ -27,7 +27,7 @@ const NewUserForm = ({submitButton,id,history}) => {
     <Form noValidate action="/success" validated={validated} id={id} onSubmit={handleSubmit}>
     <Form.Row>
       <Form.Group as={Col} md="12" controlId="email">
-        <Form.Label>Email address</Form.Label>
+        <Form.Label style={{color:"#041644"}}>Email address</Form.Label>
         <Form.Control
           required
           type="email"

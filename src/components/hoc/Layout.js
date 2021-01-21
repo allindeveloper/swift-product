@@ -1,16 +1,11 @@
 import React, { Suspense } from "react";
-import {
-  Route,
-  Switch,
-  withRouter
-} from "react-router-dom";
+import { Route, Switch, withRouter } from "react-router-dom";
 import Loader from "../../components/Loader/Loader";
 import Home from "../../Pages/Home/Home";
 import { NotFound } from "../../Pages/NotFound/NotFound";
 import Success from "../../Pages/Success/Success";
 import Aux from "../hoc/Aux/Aux";
 import ScrollToTop from "../ScrollToTop";
-
 
 export class Layout extends React.Component {
   constructor(props) {
@@ -26,28 +21,16 @@ export class Layout extends React.Component {
         <ScrollToTop>
           <Suspense fallback={<Loader />}>
             <Switch>
-              
               <Route
                 path={"/"}
                 exact
-                render={(props) => (
-                  <Home
-                    {...this.props}
-                  />
-                )}
+                render={(props) => <Home {...this.props} />}
               />
 
-<Route
+              <Route
                 path={"/success"}
-                
-                render={(props) => (
-                  <Success
-                    {...this.props}
-                  />
-                )}
+                render={(props) => <Success {...this.props} />}
               />
-
-              
 
               <Route
                 render={(props) => <NotFound {...this.props} {...props} />}
