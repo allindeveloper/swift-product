@@ -96,7 +96,7 @@ const Header = ({}) => {
                       type="button"
                       className="btn btn-custom navbar-btn waves-effect waves-light"
                     >
-                      Partner Login
+                      Login
                     </button>
                   </li>
                 </ul>
