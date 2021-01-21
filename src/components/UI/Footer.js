@@ -47,7 +47,7 @@ Georgia</a></li>
                             <div className="col-lg-3 margin-t-20">
                                 <h4 className="text-simple-bold">Contact Us</h4>
                                 <div className="margin-t-20">
-                                    <p className="text-alone">+234 [0] 802 345 6789</p>
+                                    <p className="text-alone">+234 [0] 700 000 1111</p>
                                     <p className="text-alone text-underline">contactus@swiftpayment.com</p>
                                     <p className="text-alone">Follow us</p>
                                     <div className="inline-flex">

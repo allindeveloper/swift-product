@@ -28,6 +28,8 @@ const Services = () => {
               <Fade bottom>
                 <ServicesCard 
                 viewMoreLink=""
+                caption="Reliable Reporting"
+                caption="Smart Bundles"
                 content="Lorem ipsum dolor sit amert plerusa consectetur vred adipiscing tortor donec deauteir accumsan nibh turpis treu massa, consectetur adipiscing tortor benelit. " />
               </Fade>
             </Col>
@@ -36,6 +38,7 @@ const Services = () => {
               <Fade bottom>
                 <ServicesCard 
                 viewMoreLink=""
+                caption="Quick Recharge"
                 content="Lorem ipsum dolor sit amert plerusa consectetur vred adipiscing tortor donec deauteir accumsan nibh turpis treu massa, consectetur adipiscing tortor benelit. " />
               </Fade>
             </Col>
@@ -45,6 +48,7 @@ const Services = () => {
                 {" "}
                 <ServicesCard 
                 viewMoreLink=""
+                caption="Quick teller"
                 content="Lorem ipsum dolor sit amert plerusa consectetur vred adipiscing tortor donec deauteir accumsan nibh turpis treu massa, consectetur adipiscing tortor benelit. " />
               </Fade>
             </Col>

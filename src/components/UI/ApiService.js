@@ -1,7 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import dashTwo from "../../images/dashTwo.svg";
+import DotsLoader from "../Loader/DotsLoader";
 import Player from "../Player/Player";
-const ApiService = () => {
+const ApiService = ({}) => {
+
+  const [loading, setloading] = useState(true);
+  
+  const handleReady = ()=>{
+    setloading(false)
+  }
+
+  const handleError = () => {
+    setloading(false)
+  }
   return (
     <React.Fragment>
       <section className="section-lg bg-lightblue" id="apiservice">
@@ -24,9 +35,19 @@ const ApiService = () => {
             </div>
             <div className="col-lg-7 order-1 order-lg-2">
               <div className="features-img mx-auto mr-lg-0">
+                {loading=== true&&
+                    <DotsLoader/>
+                }
                 <Player id="video"
                 height="100%"
                 width="100%"
+                url="https://www.youtube.com/watch?v=ysz5S6PUM-U"
+                onReady={
+                    handleReady
+                }
+                onError={
+                  handleError
+                }
                 />
               </div>
             </div>
