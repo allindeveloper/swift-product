@@ -1,8 +1,7 @@
 import React, { useState } from "react";
+import logo from "../../images/logo.png";
 // import { a } from 'react-router-dom';
 import SmartScroll from "../ScrollToTop/SmartScroll";
-
-
 const Header = ({}) =>{
   
 
@@ -29,7 +28,7 @@ const Header = ({}) =>{
           >
             <div className="container">
               <a className="navbar-brand" id="header-img" href="/">
-                Swift Payment{" "}
+                <img src={logo} alt="Swift Payment Logo" style={{width:"40%"}}/>
               </a>
 
               <button

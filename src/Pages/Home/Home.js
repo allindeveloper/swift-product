@@ -14,15 +14,12 @@ const Home = () => {
       <div id="home">
         <Header />
 
-        <SpaceTop length={20} />
+        <SpaceTop length={30} />
         <About />
         <SpaceTop length={30} />
 
         <Partners />
         <SpaceTop length={60} />
-
-        {/* Api Service */}
-
         <Services />
         <ApiService />
         <SpaceTop length={190} />
