@@ -7,6 +7,7 @@ import {
 import Loader from "../../components/Loader/Loader";
 import Home from "../../Pages/Home/Home";
 import { NotFound } from "../../Pages/NotFound/NotFound";
+import Success from "../../Pages/Success/Success";
 import Aux from "../hoc/Aux/Aux";
 import ScrollToTop from "../ScrollToTop";
 
@@ -31,6 +32,16 @@ export class Layout extends React.Component {
                 exact
                 render={(props) => (
                   <Home
+                    {...this.props}
+                  />
+                )}
+              />
+
+<Route
+                path={"/success"}
+                
+                render={(props) => (
+                  <Success
                     {...this.props}
                   />
                 )}

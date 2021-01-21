@@ -266,10 +266,10 @@ export const NotFound = (props) => {
                             </g>
                             <path class="st9" d="M320.3 257.8h549.9" />
                             <g id="Text">
-                                <text transform="translate(377.037 230.025)" class="st8 st10" font-size="21">
+                                <text transform="translate(377.037 230.025)" class="st8 st10" style={{fontSize:"21"}}>
                                     404
         </text>
-                                <text transform="translate(465.5 213.994)" class="st8 st10" font-size="24.025">
+                                <text transform="translate(465.5 213.994)" class="st8 st10" style={{fontSize:"24.025"}}>
                                     Swift Payment Page not found.
         </text>
                             </g>

@@ -1,0 +1,22 @@
+$success__primary: #3DC480;
+$success__secondary: #B8BABB;
+
+.successcard {
+  background: white;
+  padding: 60px;
+  border-radius: 4px;
+  box-shadow: 0 2px 3px #c8d0d8;
+  display: inline-block;
+  margin: 0 auto;
+
+  i {
+    color: #9abc66;
+    font-size: 100px;
+    line-height: 200px;
+    margin-left: -15px;
+  }
+}
+
+#success{
+    text-align: center;
+}

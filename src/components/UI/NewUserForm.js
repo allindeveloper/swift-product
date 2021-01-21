@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { Col, Form } from "react-bootstrap";
+import { withRouter } from "react-router";
 
-const NewUserForm = ({submitButton,id}) => {
+const NewUserForm = ({submitButton,id,history}) => {
   const [validated, setValidated] = useState(false);
 
   const [email, setemail] = useState("")
@@ -13,15 +14,17 @@ const NewUserForm = ({submitButton,id}) => {
   const handleSubmit = (event) => {
     const form = event.currentTarget;
     if (form.checkValidity() === false) {
+      
       event.preventDefault();
       event.stopPropagation();
     }
-
+    // history.push("/success")
     setValidated(true);
+    
   };
 
   return (
-    <Form noValidate validated={validated} id={id} onSubmit={handleSubmit}>
+    <Form noValidate action="/success" validated={validated} id={id} onSubmit={handleSubmit}>
     <Form.Row>
       <Form.Group as={Col} md="12" controlId="validationCustom01">
         <Form.Label>Email address</Form.Label>
@@ -48,4 +51,4 @@ const NewUserForm = ({submitButton,id}) => {
   );
 };
 
-export default NewUserForm;
+export default withRouter(NewUserForm);
