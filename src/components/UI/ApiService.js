@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Button } from "react-bootstrap";
 import dashTwo from "../../images/dashTwo.svg";
 import DotsLoader from "../Loader/DotsLoader";
 import Player from "../Player/Player";
@@ -25,12 +26,17 @@ const ApiService = ({}) => {
                   Powerful and <br /> Easy to use APIs
                 </h3>
                 <p className="text-muted web-desc">
-                  Lorem ipsum dolor sit amet, consectetur vred adipiscing
-                  tortor, pellentesque donec deaut accumsan nibh turpis treu
-                  massa consectetur adipiscing tortor benelit. Adipiscing
-                  tortor, pellentesque donec deaut accumsan nibh turpis
-                  pellentesque donec deaut consectetur.
+                  Our High Performant and blazing fast APIs arre ever ready for you.
+                  we have a very clean and concise documentation that will giude you through setting up and familiarizing yourself 
+                  with what is required
                 </p>
+                <Button
+                  type="submit"
+                  style={{margin:"auto"}}
+                  className="btn btn-custom margin-t-30 waves-effect waves-light"
+                >
+                  Go to Docs
+                </Button>
               </div>
             </div>
             <div className="col-lg-7 order-1 order-lg-2">
