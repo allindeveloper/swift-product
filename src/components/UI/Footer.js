@@ -23,6 +23,7 @@ const Footer = ()=>{
                                         <li><a className="text-small" onClick={evt => {  evt.preventDefault(); } } to="#">West Coast <br/>
 12b, washington drive  <br/>
 Georgia</a></li>
+<div id="google_translate_element"></div>
                                       </ul>
                                 </div>
                             </div>
