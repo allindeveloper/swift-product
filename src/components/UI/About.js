@@ -5,9 +5,12 @@ import dash from "../../images/dash.svg";
 import grAnaly from "../../images/growth-analytics.svg";
 import SpaceTop from "../Space/SpaceTop";
 import NewUserForm from "./NewUserForm";
+import { useTranslation } from "react-i18next";
+
 
 const About = () => {
- 
+  const { t, i18n } = useTranslation();
+
 
   return (
     <React.Fragment>
@@ -20,7 +23,8 @@ const About = () => {
               <div className="features-box mt-5 mt-lg-0">
                 <Fade bottom>
                   <h1 className="text-header">
-                    Enabling Fast Payment Integrations across the globe
+                    {/* Enabling Fast Payment Integrations across the globe */}
+                    {t("mainTitle")}
                   </h1>
                 </Fade>
                 <p className="text-muted web-desc">

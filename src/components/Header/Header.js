@@ -1,21 +1,21 @@
 import React, { useState } from "react";
 import logo from "../../images/logo.png";
 import SmartScroll from "../ScrollToTop/SmartScroll";
+import { useTranslation } from "react-i18next";
+
 const Header = ({}) => {
   const [Tab, setTab] = useState("");
   const [isOpen, setisOpen] = useState(false);
+  const { i18n } = useTranslation();
 
   const toggleMenu = () => {
     setisOpen(!isOpen);
   };
 
-  /**
-   * Sets active tab
-   */
-  const setActiveTab = (tab, e) => {
-    setTab(tab);
-  };
 
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng?.target.value);
+  };
   return (
     <React.Fragment>
       <div id="is-sticky">
@@ -82,10 +82,24 @@ const Header = ({}) => {
                       API
                     </a>
                   </li>
-                  <li className="nav-item">
+                  {/* <li className="nav-item">
                     <a href="#contact" className="nav-link">
                       Contact Us
                     </a>
+                  </li> */}
+
+                  <li className="nav-item">
+                    <div class="form-group ml-5 mt-1">
+                     <select
+                        class="form-control"
+                        id="exampleFormControlSelect1"
+                        onChange={changeLanguage}
+                      >
+                        <option>Change Language</option>
+                        <option value="en">English</option>
+                        <option value="de">Spanish</option>
+                      </select>
+                    </div>
                   </li>
                 </ul>
               </SmartScroll>
@@ -94,6 +108,7 @@ const Header = ({}) => {
                   <li>
                     <button
                       type="button"
+                      style={{marginTop:-10}}
                       className="btn btn-custom navbar-btn waves-effect waves-light"
                     >
                       Login

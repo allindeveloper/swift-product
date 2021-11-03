@@ -6,7 +6,7 @@ import './css/colors/colors.css';
 import './css/waves.css';
 import history from './history';
 import reportWebVitals from './reportWebVitals';
-
+import "./locale/i18n";
 ReactDOM.render(
     <Router history={history} >
     <Layout
