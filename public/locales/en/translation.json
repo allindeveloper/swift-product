@@ -1,9 +1,41 @@
 {
-    "title": "Welcome to react using react-i18next---",
-    "mainTitle":"Enabling Fast Payment Integrations across the globe",
-    "description": {
-      "part1": "To get started, edit <1>src/App.js</1> and save to reload.",
-      "part2": "Switch language between english and german using buttons above."
-    }
+  "title": "Welcome to react using react-i18next---",
+  "mainTitle": "Enabling Fast Payment Integrations across the globe",
+  "mainsubTitle": "Swift Enables Fast and Reliable Global Payment services via our super simple APIs.",
+  "joinWaitingList": "Join Waiting List",
+  "topNavigation": {
+    "home": "Hogar",
+    "services": "Servicios",
+    "api": "api",
+    "loginButton":"Login",
+    "changeLanguage": "Change Language"
+  },
+  "apiService":{
+    "caption":"Powerful and Easy to use APIs",
+    "description":"Our High Performant and blazing fast APIs arre ever ready for you. we have a very clean and concise documentation that will giude you through setting up and familiarizing yourself with what is required",
+    "gotoDocs":"Go to Docs"
+  },
+  "services": {
+    "mainTitle": "Our Services",
+    "subTitle": "Swift Networks offers state-of-the-art broadband services for cost-effective and reliable deployment of a multi-service network, offering converged voice telephony, video conferencing, video surveillance, high-Speed data transmission and Internet access services over our secure, high-speed and reliable telecommunications pipe.",
+    "cards": {
+      "firstCardCaption": "Payment Controls",
+      "firstCardDescription": "SWIFT Payment Controls makes it easy for you to mitigate fraudulent attacks by detecting and preventing high-risk payments.",
+      "secondCardCaption": "Quick Recharge",
+      "secondCardDescription": "Using our Super Fast Recharge APIs, you can buy Large Bundles, Transfer to Third Party and  other operations at lightning speed.",
+      "thirdCardCaption": "Quick Teller",
+      "thirdCardDescription": "With Seamless integration into Quick Teller, now all your worries about online payments have been taken care of. we'll do the work for you."
+    },
+    "viewMore": "View More"
+  },
+  "footer": {
+    "company": "Company",
+    "aboutUs": "About Us",
+    "faqs": "FAQs",
+    "services": "Services",
+    "address": "West Coast 12b, washington drive Georgia",
+    "privacyPolicy": "Privacy Policy",
+    "termsAndCondition": "Terms and Conditions",
+    "allRightsReserved": "All Rights Reserved"
   }
-  
+}

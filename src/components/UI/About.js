@@ -9,7 +9,7 @@ import { useTranslation } from "react-i18next";
 
 
 const About = () => {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
 
   return (
@@ -23,13 +23,11 @@ const About = () => {
               <div className="features-box mt-5 mt-lg-0">
                 <Fade bottom>
                   <h1 className="text-header">
-                    {/* Enabling Fast Payment Integrations across the globe */}
                     {t("mainTitle")}
                   </h1>
                 </Fade>
                 <p className="text-muted web-desc">
-                  Swift Enables Fast and Reliable Global Payment  
-                  services via our super simple APIs.
+                {t("mainsubTitle")}
                 </p>
                 <NewUserForm
                 id="form"
@@ -39,7 +37,7 @@ const About = () => {
                   style={{margin:"auto"}}
                   className="btn btn-custom margin-t-30 waves-effect waves-light"
                 >
-                  Join Waiting List
+                  {t('joinWaitingList')}
                 </Button>
                 }
                 />

@@ -3,7 +3,10 @@ import { Button } from "react-bootstrap";
 import dashTwo from "../../images/dashTwo.svg";
 import DotsLoader from "../Loader/DotsLoader";
 import Player from "../Player/Player";
+import { useTranslation } from "react-i18next";
+
 const ApiService = ({}) => {
+  const { t } = useTranslation();
 
   const [loading, setloading] = useState(true);
   
@@ -23,19 +26,17 @@ const ApiService = ({}) => {
               <img src={dashTwo} alt="dash-api" />
               <div className="features-box mt-5 mt-lg-0">
                 <h3 className="text-header">
-                  Powerful and <br /> Easy to use APIs
+                  {t('apiService.caption')}
                 </h3>
                 <p className="text-muted web-desc">
-                  Our High Performant and blazing fast APIs arre ever ready for you.
-                  we have a very clean and concise documentation that will giude you through setting up and familiarizing yourself 
-                  with what is required
+                {t('apiService.description')}
                 </p>
                 <Button
                   type="submit"
                   style={{margin:"auto"}}
                   className="btn btn-custom margin-t-30 waves-effect waves-light"
                 >
-                  Go to Docs
+                  {t('apiService.gotoDocs')}
                 </Button>
               </div>
             </div>

@@ -1,9 +1,43 @@
 {
-    "title": "Willkommen zu react und react-i18next",
-    "mainTitle":"Habilitación de integraciones de pagos rápidos en todo el mundo",
-    "description": {
-      "part1": "Um loszulegen, ändere <1>src/App(DE).js</1> und speichere um neuzuladen.",
-      "part2": "Wechsle die Sprache zwischen deutsch und englisch mit Hilfe der beiden Schalter."
-    }
-  }
-  
+  "title": "Willkommen zu react und react-i18next",
+  "mainTitle": "Habilitación de integraciones de pagos rápidos en todo el mundo",
+  "mainsubTitle": "Swift permite servicios de pago global rápidos y confiables a través de nuestras API súper simples.",
+  "joinWaitingList": "Únete a la lista de espera",
+  "topNavigation":{
+    "home":"Hogar",
+    "services":"Servicios",
+    "api":"api",
+    "loginButton":"acceso",
+    "changeLanguage":"Cambiar idioma"
+  },
+  "apiService":{
+    "caption":"Powerful and Easy to use APIs",
+    "description":"Nuestras API de alto rendimiento y ultrarrápidas están siempre listas para usted. Tenemos una documentación muy limpia y concisa que le ayudará a configurar y familiarizarse con lo que se requiere.",
+    "gotoDocs":"Tengo que docs"
+  },
+  "services": {
+    "mainTitle": "Nuestros servicios",
+    "subTitle": "Swift Networks ofrece servicios de banda ancha de última generación para la implementación rentable y confiable de una red multiservicio, que ofrece telefonía de voz convergente, videoconferencia, videovigilancia, transmisión de datos de alta velocidad y servicios de acceso a Internet a través de nuestra red segura. Tubería de telecomunicaciones confiable y de alta velocidad.",
+    "cards": {
+      "firstCardCaption": "Controles de pago",
+      "firstCardDescription": "SWIFT Payment Controls le facilita la mitigación de ataques fraudulentos mediante la detección y prevención de pagos de alto riesgo.",
+      "secondCardCaption": "Recarga rápida",
+      "secondCardDescription": "Con nuestras API de recarga súper rápida, puede comprar paquetes grandes, transferir a terceros y otras operaciones a la velocidad del rayo.",
+      "thirdCardCaption": "Cajera rápida",
+      "thirdCardDescription": "Con la integración perfecta en Quick Teller, ahora se han resuelto todas sus preocupaciones sobre los pagos en línea. haremos el trabajo por usted."
+    },
+    "viewMore":"Ver más"
+
+  },
+  "footer":{
+    "company":"Empresa",
+    "aboutUs":"Sobre nosotras",
+    "faqs":"Preguntas frecuentes",
+    "services":"Servicios",
+    "address":"West Coast 12b, washington drive Georgia",
+    "privacyPolicy":"Intimidad",
+    "termsAndCondition":"términos y Condiciones",
+    "allRightsReserved":"Reservados todos los derechos"
+
+}
+}

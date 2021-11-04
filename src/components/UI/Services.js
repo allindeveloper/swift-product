@@ -2,8 +2,11 @@ import React from "react";
 import { Col, Row } from "react-bootstrap";
 import Fade from "react-reveal/Fade";
 import ServicesCard from "../Card/ServicesCard";
+import { useTranslation } from "react-i18next";
 
 const Services = () => {
+  const { t } = useTranslation();
+
   return (
     <React.Fragment>
       <section className="section bg-light" id="services">
@@ -12,12 +15,12 @@ const Services = () => {
             <Col lg="8" className="offset-lg-2">
               <Fade bottom>
                 <h1 className="section-title text-center text-center-black ">
-                  Our Services
+                  {t("services.mainTitle")}
                 </h1>
               </Fade>
               <div className="section-title-border margin-t-20"></div>
               <p className="section-subtitle text-muted text-center padding-t-30 font-secondary">
-              Swift Networks offers state-of-the-art broadband services for cost-effective and reliable deployment of a multi-service network, offering converged voice telephony, video conferencing, video surveillance, high-Speed data transmission and Internet access services over our secure, high-speed and reliable telecommunications pipe.
+              {t("services.subTitle")}
               </p>
             </Col>
           </Row>
@@ -26,8 +29,10 @@ const Services = () => {
               <Fade bottom>
                 <ServicesCard 
                 viewMoreLink=""
-                caption="Payment Controls"
-                content="SWIFT Payment Controls makes it easy for you to mitigate fraudulent attacks by detecting and preventing high-risk payments." />
+                viewMoreLabel={t("services.viewMore")}
+                caption={t("services.cards.firstCardCaption")}
+                content={t("services.cards.firstCardDescription")}
+                />
               </Fade>
             </Col>
 
@@ -35,18 +40,22 @@ const Services = () => {
               <Fade bottom>
                 <ServicesCard 
                 viewMoreLink=""
-                caption="Quick Recharge"
-                content="Using our Super Fast Recharge APIs, you can buy Large Bundles, Transfer to Third Party and perform many other operations at lightning speed" />
-              </Fade>
+                viewMoreLabel={t("services.viewMore")}
+                caption={t("services.cards.secondCardCaption")}
+                content={t("services.cards.secondCardDescription")}
+                />
+                </Fade>
             </Col>
 
             <Col lg="4" className="margin-t-20">
               <Fade bottom>
                 {" "}
                 <ServicesCard 
+                viewMoreLabel={t("services.viewMore")}
                 viewMoreLink=""
-                caption="Quick teller"
-                content="With Seamless integration into Quick Teller, now all your worries about online payments have been taken care of. we'll do the work for you." />
+                caption={t("services.cards.thirdCardCaption")}
+                content={t("services.cards.thirdCardDescription")}
+                />
               </Fade>
             </Col>
           </div>

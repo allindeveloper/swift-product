@@ -1,6 +1,10 @@
 import React from "react";
 import Aux from "../hoc/Aux/Aux";
+import { useTranslation } from "react-i18next";
+
 const FooterEnd = ({ termsandconditionslink, policylink }) => {
+  const { t } = useTranslation();
+
   return (
     <Aux>
       <div className="footer-alt">
@@ -8,8 +12,7 @@ const FooterEnd = ({ termsandconditionslink, policylink }) => {
           <div className="basicflex row" style={{paddingLeft:"inherit"}}>
             <div className="inline">
               <p className="copy-rights text-muted mb-3 mb-sm-0">
-                &copy; {new Date().getFullYear()} Swift Payment - All Rights
-                Reserved.
+                &copy; {new Date().getFullYear()} Swift Payment - {t('footer.allRightsReserved')}
               </p>
             </div>
 
@@ -21,7 +24,7 @@ const FooterEnd = ({ termsandconditionslink, policylink }) => {
                 }}
                 className="text-simple"
               >
-                Privacy Policy
+                {t('footer.privacyPolicy')}
               </a>
               <a
                 href={termsandconditionslink}
@@ -30,7 +33,7 @@ const FooterEnd = ({ termsandconditionslink, policylink }) => {
                 }}
                 className="text-simple margin-r-2 padding-l-2"
               >
-                Terms and Conditions
+                {t('footer.termsAndCondition')}
               </a>
             </div>
           </div>

@@ -6,7 +6,7 @@ import { useTranslation } from "react-i18next";
 const Header = ({}) => {
   const [Tab, setTab] = useState("");
   const [isOpen, setisOpen] = useState(false);
-  const { i18n } = useTranslation();
+  const { i18n ,t } = useTranslation();
 
   const toggleMenu = () => {
     setisOpen(!isOpen);
@@ -69,17 +69,17 @@ const Header = ({}) => {
                 >
                   <li className="nav-item active">
                     <a href="#home" className="nav-link">
-                      Home
+                      {t('topNavigation.home')}
                     </a>
                   </li>
                   <li className="nav-item">
                     <a href="#services" className="nav-link">
-                      Services
+                    {t('topNavigation.services')}
                     </a>
                   </li>
                   <li className="nav-item">
                     <a href="#apiservice" className="nav-link">
-                      API
+                    {t('topNavigation.api')}
                     </a>
                   </li>
                   {/* <li className="nav-item">
@@ -95,7 +95,7 @@ const Header = ({}) => {
                         id="exampleFormControlSelect1"
                         onChange={changeLanguage}
                       >
-                        <option>Change Language</option>
+                        <option>{t('topNavigation.changeLanguage')}</option>
                         <option value="en">English</option>
                         <option value="de">Spanish</option>
                       </select>
@@ -111,7 +111,7 @@ const Header = ({}) => {
                       style={{marginTop:-10}}
                       className="btn btn-custom navbar-btn waves-effect waves-light"
                     >
-                      Login
+                      {t('topNavigation.loginButton')}
                     </button>
                   </li>
                 </ul>
