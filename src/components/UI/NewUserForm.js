@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import { Col, Form } from "react-bootstrap";
 import { withRouter } from "react-router";
+import { useTranslation } from "react-i18next";
 
 const NewUserForm = ({submitButton,id,history}) => {
   const [validated, setValidated] = useState(false);
+  const { t } = useTranslation();
 
   const [email, setemail] = useState("")
 
@@ -27,7 +29,7 @@ const NewUserForm = ({submitButton,id,history}) => {
     <Form noValidate action="/success" validated={validated} id={id} onSubmit={handleSubmit}>
     <Form.Row>
       <Form.Group as={Col} md="12" controlId="email">
-        <Form.Label style={{color:"#041644"}}>Email address</Form.Label>
+        <Form.Label style={{color:"#041644"}}>{t('emailAddress')}</Form.Label>
         <Form.Control
           required
           type="email"
