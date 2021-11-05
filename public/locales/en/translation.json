@@ -7,7 +7,7 @@
   "topNavigation": {
     "home": "Home",
     "services": "Services",
-    "api": "api",
+    "api": "Api",
     "loginButton":"Login",
     "changeLanguage": "Change Language"
   },
